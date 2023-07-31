@@ -1,0 +1,52 @@
+{
+  "name": "domcom",
+  "version": "0.8.6",
+  "description": "dom component",
+  "keywords": [
+    "domcom",
+    "web",
+    "framework",
+    "dom",
+    "component",
+    "javascript",
+    "front end"
+  ],
+  "author": "Caoxingming",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/czhzz/domcom/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/czhzz/domcom",
+  "bugs": "https://github.com/czhzz/domcom/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/czhzz/domcom.git"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.7",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.6.7",
+    "conventional-changelog-cli": "^3.0.0",
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.3"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
